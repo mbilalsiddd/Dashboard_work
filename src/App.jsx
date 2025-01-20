@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import "bootstrap/dist/css/bootstrap.min.css";
 import Dashboard from './pages/Dashboard'
 import Header from './components/Header'
@@ -14,21 +14,19 @@ const App = () => {
       
         <Header />
         <div className='main d-flex'>
+         <Router>
           <div className='sidebarwrapper'>
             <SideBar />
           </div>
-
           <div className='content'>
-          <BrowserRouter>
-            <Routes>
+           <Routes>
               <Route path="/" element={<Dashboard />} />
               <Route path="/room" element={<Room />} />
             </Routes>
-          </BrowserRouter>
           </div>
+          </Router>
         </div>
-      
-    </>
+      </>
   )
 }
 

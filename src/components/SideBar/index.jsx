@@ -11,16 +11,31 @@ import { useNavigate } from 'react-router-dom';
 const SideBar = () => {
     const navigate = useNavigate();
 
-    const handleNavigate = () => {
+    const handleNavigateR = () => {
         navigate("/Room")
     }
+
+    const handleNavigateA = () => {
+        navigate("/AppointmentForm")
+    }
+
+    const handleNavigateW = () => {
+        navigate("/WaitingList")
+    }
+
+    const handleNavigateS = () => {
+        navigate("/Schedule")
+    }
+
+
+
     
     return(
         <>
         <div className="sidebar">
             <ul>
                 <li>
-                    <Button className='w-100' onClick={handleNavigate}>
+                    <Button className='w-100' onClick={handleNavigateR}>
                         <span className='icon'><FaBed/></span>
                         Room
                         <span className='arrow'><FaAngleRight/></span>
@@ -30,9 +45,9 @@ const SideBar = () => {
             <ul>
                 <li>
               
-                    <Button className='w-100'>
+                    <Button className='w-100' onClick={handleNavigateA}>
                         <span className='icon'><FaWpforms/></span>
-                        Appointment Form
+                        AppointmentForm
                         <span className='arrow'><FaAngleRight/></span>
                     </Button>
                    
@@ -41,9 +56,9 @@ const SideBar = () => {
             <ul>
                 <li>
                 
-                    <Button className='w-100'>
+                    <Button className='w-100' onClick={handleNavigateW}>
                         <span className='icon'><CiBoxList/></span>
-                        Waiting List
+                        WaitingList
                         <span className='arrow'><FaAngleRight/></span>
                     </Button>
              
@@ -52,7 +67,7 @@ const SideBar = () => {
             <ul>
                 <li>
                 
-                    <Button className='w-100'>
+                    <Button className='w-100' onClick={handleNavigateS}>
                         <span className='icon'><MdCancelScheduleSend/></span>
                         Schedule
                         <span className='arrow'><FaAngleRight/></span>
