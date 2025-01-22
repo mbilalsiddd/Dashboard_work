@@ -6,9 +6,6 @@ import { MdBedroomChild } from "react-icons/md";
 import { FaUserDoctor } from "react-icons/fa6";
 
 
-
-
-
 const Dashboard = () => {
     return (
         <>

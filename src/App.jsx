@@ -6,6 +6,9 @@ import Header from './components/Header'
 import "./App.css"
 import SideBar from './components/SideBar';
 import Room from './pages/Room';
+import AppointmentForm from './pages/AppointmentForm.jsx';
+import WaitingList from './pages/WaitingList/index.jsx';
+import Schedule from './pages/Schedule/index.jsx';
 
 
 const App = () => {
@@ -22,6 +25,9 @@ const App = () => {
            <Routes>
               <Route path="/" element={<Dashboard />} />
               <Route path="/room" element={<Room />} />
+              <Route path="/appointmentform" element={<AppointmentForm />} />
+              <Route path="/waitinglist" element={<WaitingList />} />
+              <Route path="/schedule" element={<Schedule />} />
             </Routes>
           </div>
           </Router>

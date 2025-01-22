@@ -1,13 +1,13 @@
 import React from 'react'
 
-const Room = () => {
+const Schedule = () => {
   return (
     <>
       <h1 className="r">
-        welcome to room
+        welcome to Schedule
       </h1>
     </>
   )
 }
 
-export default Room
+export default Schedule

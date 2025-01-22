@@ -1,13 +1,13 @@
 import React from 'react'
 
-const Room = () => {
+const WaitingList = () => {
   return (
     <>
       <h1 className="r">
-        welcome to room
+        welcome to waiting list
       </h1>
     </>
   )
 }
 
-export default Room
+export default WaitingList
